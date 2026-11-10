@@ -30,6 +30,12 @@ trabalho manual e erros operacionais.
 
 ## Estrutura
 
-├── menu.sh          # Menu principal
-├── tasks/           # Scripts de cada tarefa
-└── README.md
+```text
+.
+|-- menu.sh          # Menu principal
+|-- src/             # Scripts de cada tarefa
+|   |-- backup.sh
+|   |-- lib.sh
+|   `-- monitor_disk.sh
+`-- README.md
+```
