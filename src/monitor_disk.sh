@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-# Import log and die function
+set -euo pipefail
+
+# Import cmd_require, log and die function
 source "$(dirname "${BASH_SOURCE[0]}")/lib.sh"
 
 TEAMS_WEBHOOK_URL="${TEAMS_WEBHOOK_URL:-}"

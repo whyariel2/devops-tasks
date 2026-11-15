@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 bkp_dir="$HOME/bkp"
 bkp_file_name="$HOME/bkp-$(date +"%Y-%m-%d%H%M%S").tar.gz"
 dir=("${@:1}")
