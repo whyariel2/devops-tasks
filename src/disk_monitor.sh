@@ -8,7 +8,7 @@ source "$(dirname "${BASH_SOURCE[0]}")/lib.sh"
 TEAMS_WEBHOOK_URL="${TEAMS_WEBHOOK_URL:-}"
 
 usage_limit=85
-hostname="$(hostname)"
+hostname="$(echo "$HOSTNAME")"
 origin="${ORIGIN:-unknown}"
 
 getPartitionOverLimit() {
