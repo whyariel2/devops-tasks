@@ -36,7 +36,7 @@ selectMenuOption() {
 
     case "$option" in
         "Backup") src/backup.sh ;;
-        "Disk Monitor") ORIGIN=Menu src/monitor_disk.sh ;;
+        "Disk Monitor") ORIGIN=Menu src/disk_monitor.sh ;;
         *) return 1 ;;
     esac || die "$option module not found" 
 }
@@ -50,7 +50,6 @@ main() {
     choice="$(showMenu)"
     option="$(selectMenuOption "$choice")"
 
-    printf '%s\n' "$option"
 }
 
 main "$@"
